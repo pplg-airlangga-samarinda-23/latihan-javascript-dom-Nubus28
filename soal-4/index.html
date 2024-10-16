@@ -28,6 +28,23 @@
         // berdasarkan nilai diameter yang dimasukkan.
         // Nilai volume akan muncul pada isian Volume setelah tombol
         // hitung ditekan.
+        const form = document.getElementById('form');
+        const diameterInput = document.getElementById('diameter');
+        const volumeInput = document.getElementById('volume');
+
+        
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+           
+            const diameter = parseFloat(diameterInput.value);
+
+           
+            const volume = (4/3) * Math.PI * Math.pow(diameter/2, 3);
+
+            
+            volumeInput.value = volume.toFixed(2);
+        });
     </script>
 </body>
 

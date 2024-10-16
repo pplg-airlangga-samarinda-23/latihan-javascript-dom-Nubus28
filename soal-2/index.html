@@ -8,10 +8,19 @@
     <button id="tombol">Tombol</button>
 
     <script>
-        // tambahkan skrip javascript di sini
+        
         // untuk mengubah ukuran dan warna dari teks
         // "Rekayasa Perangkat Lunak"
+         // Mendapatkan elemen paragraf dan tombol
+         const paragraf = document.getElementById('teks');
+        const tombol = document.getElementById('tombol');
 
+        // Menambahkan event listener pada tombol
+        tombol.addEventListener('click', () => {
+            // Mengubah ukuran font menjadi 24px dan warna menjadi merah
+            paragraf.style.fontSize = '24px';
+            paragraf.style.color = 'red';
+        });
         
     </script>
 </body>
